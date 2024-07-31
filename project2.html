@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Travelling Hobby</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        background-color: #f0f0f0;
+        color: #333;
+        text-align: center;
+      }
+      h1 {
+        background-color: #1e88e5;
+        color: white;
+        padding: 10px 0;
+      }
+      img {
+        width: 100%;
+        max-width: 400px;
+        height: 200px;
+        margin: 10px auto;
+        padding: 8px;
+        object-fit: cover;
+      }
+      button {
+        display: block;
+        margin: 5px auto;
+        border: 1px solid #1e88e5;
+        background: #1e88e5;
+        color: white;
+        font-size: 20px;
+        border-radius: 5px;
+        padding: 10px 5px;
+        transition: all 150ms ease-in-out;
+      }
+      button:hover {
+        background: #1565c0;
+        cursor: pointer;
+      }
+      .dark-theme {
+        font-size: 16px;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 8px 15px;
+        background-color: black;
+        color: white;
+      }
+      .dark-theme:hover {
+        color: white;
+        background: black;
+      }
+      footer {
+        margin: 15px 0;
+        font-size: 18px;
+      }
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 400px);
+        grid-gap: 20px;
+        border-radius: 5px;
+        transition: transform 0.2s;
+        justify-content: center;
+      }
+      .gallery:hover {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <button class="dark-theme">Dark Theme</button>
+    <h1>Exploring The World</h1>
+    <h2>About Travelling</h2>
+    <p>
+      Travelling is the act of moving from one place to another, it is a popular
+      hobby that allows individuals to explore new cultures, meet new people and
+      experience diverse environments.Weather travelling domestically or
+      internationally, this activity offers endless opportunities for adventures
+      and learning.
+    </p>
+    <a href="https://www.nationalgeographical.com/travel/" target="-blank"
+      ><strong>Explore travel stories</strong></a
+    >
+    <h2>Travel gallery</h2>
+    <p>Here are some breathtaking destinations to inspire your next trip.</p>
+    <div class="gallery">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/129/435/original/download.jpg?1718705345"
+        alt="Travel destination"
+        class="image1"
+      />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/129/434/original/download.jpg?1718705296"
+        alt="Travel destination"
+      />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/129/433/original/download.jpg?1718705199"
+        alt="Travel destination"
+      />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/129/432/original/download.jpg?1718705170"
+        alt="Travel destination"
+      />
+    </div>
+    <button>Discover more</button>
+    <footer>Coded by Trizah Wawuda</footer>
+    <script>
+      function darkTheme() {
+        let body = document.querySelector("body");
+        body.classList.toggle("dark-theme");
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", darkTheme);
+    </script>
+  </body>
+</html>
